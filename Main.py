@@ -28,7 +28,6 @@ for i in A:
     v = 0
     for j in range(n):
         if j <= z:
-            print ("dad")
             i.append(c[z-j])
         else:
             i.append(r[1+v])
@@ -50,10 +49,11 @@ for i in A:
 j=0
 i=0
 while j < n:
-    i = j
+    i = j+1
     while i < n:
         if (A[i])[j] != 0:
             A[i] , A[j] = A[j] , A[i]
+            det*=-1
             prinntfunc(n,*A)
             break
         i+=1
